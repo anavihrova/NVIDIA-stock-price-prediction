@@ -1,4 +1,4 @@
-# 📈 NVIDIA Stock Price Forecast | June 8–12, 2026
+# NVIDIA Stock Price Forecast | June 8–12, 2026
 
 > A short-term stock price prediction project using an ensemble ML model — built as part of a data science course.
 
@@ -6,13 +6,13 @@
 
 ---
 
-## 🤔 What is this?
+##  What is this?
 
 I tried to predict NVIDIA's (NVDA) closing price for each day of the week **June 8–12, 2026** using two models combined together. The prediction was made *before* the week started, and then compared to what actually happened.
 
 ---
 
-## ⚙️ How it works
+## How it works
 
 I used an **ensemble of 2 models** (their outputs are blended based on past accuracy):
 
@@ -31,9 +31,9 @@ Weights between the two models are set automatically using **inverse-MAE from wa
 
 ---
 
-## 📊 Results
+## Results
 
-| Date | Day | 🔮 Predicted | ✅ Actual | Δ |
+| Date | Day | Predicted | Actual | Δ |
 |------|-----|-------------|----------|---|
 | Jun 8 | Mon | $204.26 | $208.64 | +$4.38 |
 | Jun 9 | Tue | $203.72 | $208.19 | +$4.47 |
@@ -43,9 +43,9 @@ Weights between the two models are set automatically using **inverse-MAE from wa
 
 ---
 
-## 💬 Conclusion
+## Conclusion
 
-The model got the **general range right** — NVDA did stay in the low $200s all week, which matched the prediction. The direction (slow consolidation, no big moves) was also correct.
+The model got the **general range right** -  NVDA did stay in the low $200s all week, which matched the prediction. The direction (slow consolidation, no big moves) was also correct.
 
 Where it missed: actual prices were **$2–4 higher than predicted** on most days. The model detected a "Sideways" regime after the June 5 market drop and played it conservatively — but the market bounced back a bit stronger than expected. Wednesday was the exception, where the real price actually dipped below the forecast.
 
@@ -53,7 +53,7 @@ Where it missed: actual prices were **$2–4 higher than predicted** on most day
 
 ---
 
-## 🧰 Libraries
+## Libraries
 
 ```
 yfinance · numpy · pandas · matplotlib · scikit-learn · statsmodels
